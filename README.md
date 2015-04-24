@@ -1,21 +1,30 @@
-# empty-webapp
-novice developer builds stack
+# markthru
+convert markdown files into step-by-step walkthroughs - in your browser!
+
+## use
+
+make markdown files of the form
+
+```
+# heading 1
+
+whatever
+
+## heading 2
+
+![pictures!](http://cool.biz/cat.gif)
+```
+
+and put that HTML in the #content div of `app/index.html` 
+
+now `coffee server.coffee` and visit that webpage to see your compiled clickthru tutorial!
+
+## installation 
 
 make sure you have `node`, `npm` and `grunt`
 
 then just
 ```npm install```
-
-## directory structure
-
-```
-app/ <- this is the webapp 
-    styles/ <-- sass files here
-    assets/ <-- everything 
-	lib/ <- these are your common js-style coffeescript files
-	index.html <- the main html template
-	main.coffee <- entry point for the webapp  - start reading here
-```
 
 `grunt` compiles `app/` to a neat bundle in `built-app/` coffeeify (browserify for coffeescript)
 
